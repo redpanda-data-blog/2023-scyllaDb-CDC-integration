@@ -165,11 +165,8 @@ Download and install Kafka using the following sequence of commands:
 # Extract the binaries
 wget https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz && tar -xzf kafka_2.13-3.4.0.tgz && cd kafka_2.13-3.4.0
 
-# Start Zookeeper
-bin/zookeeper-server-start.sh config/zookeeper.properties
-
-# Start Kafka (in a separate terminal window)
-bin/kafka-server-start.sh config/server.properties
+#start Kafka connect in standalone mode 
+bin/connect-standalone.sh config/connect-standalone.properties
 ```
 
 The properties files will be kept in the `/Users/kovidrathee/Downloads/kafka_2.13-3.4.0/config` directory.
